@@ -19,8 +19,8 @@
 #define rumble false
 
 // Define name and vendor of the controller
-#define BLE_NAME "DUALSHOCK4 wireless controller"
-#define BLE_VENDOR "Sony Corp"
+#define BLE_NAME "Wireless controller"
+#define BLE_VENDOR "Sony Corp."
 
 // Define D-Pad buttons pressed state as byte for clearer code
 #define UP_BIT    0x08
@@ -95,7 +95,7 @@ void setup()
     bleGamepadConfig.setAxesMin(0x00); // 0
     bleGamepadConfig.setAxesMax(0xFF); // 255
     bleGamepadConfig.setVid(0x054C); // Sony Corp.
-    bleGamepadConfig.setPid(0x05C4); // Sony Computer Entertainment Wireless Controller
+    bleGamepadConfig.setPid(0x05C4); // DualShock 4 [CUH-ZCT1x]
     bleGamepad.begin(&bleGamepadConfig);
     Serial.println("done!");
 
